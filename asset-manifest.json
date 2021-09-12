@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/movies-challenge/static/css/main.42b99d59.chunk.css",
-    "main.js": "/movies-challenge/static/js/main.869b6616.chunk.js",
-    "main.js.map": "/movies-challenge/static/js/main.869b6616.chunk.js.map",
+    "main.js": "/movies-challenge/static/js/main.7964b715.chunk.js",
+    "main.js.map": "/movies-challenge/static/js/main.7964b715.chunk.js.map",
     "runtime-main.js": "/movies-challenge/static/js/runtime-main.5ee36aa0.js",
     "runtime-main.js.map": "/movies-challenge/static/js/runtime-main.5ee36aa0.js.map",
     "static/css/2.818011ed.chunk.css": "/movies-challenge/static/css/2.818011ed.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.818011ed.chunk.css",
     "static/js/2.65a5497e.chunk.js",
     "static/css/main.42b99d59.chunk.css",
-    "static/js/main.869b6616.chunk.js"
+    "static/js/main.7964b715.chunk.js"
   ]
 }
