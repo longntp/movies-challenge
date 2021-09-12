@@ -1,7 +1,8 @@
 const initialState = {
   movies: [],
   searchTerm: '',
-  page: 1
+  page: 1,
+  detail: {}
 }
 
 export default (state = initialState, action) => {
@@ -30,6 +31,16 @@ export default (state = initialState, action) => {
       return {
         ...state,
         movies: []
+      }
+    case "GET_DETAIL_MOVIE":
+      return {
+        ...state,
+        detail: action.payload
+      }
+    case "CLEAR_DETAIL_PAGE":
+      return {
+        ...state,
+        detail: {}
       }
     default:
       return state

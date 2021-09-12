@@ -54,3 +54,24 @@ export const getMovies = () => {
     })
   }
 }
+
+export const getDetailMovie = id => {
+  return dispatch => {
+    axios.get("http://www.omdbapi.com/", {
+      params: {
+        type: 'movie',
+        apiKey,
+        i: id
+      }
+    }).then((response) => {
+      const { data } = response;
+      dispatch({ type: "GET_DETAIL_MOVIE", payload: data })
+    })
+  }
+}
+
+export const clearDetailState = () => {
+  return {
+    type: "CLEAR_DETAIL_PAGE"
+  }
+}

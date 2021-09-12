@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Button, Row, Col, Card } from 'react-bootstrap';
 import { connect } from 'react-redux';
+import { useHistory } from "react-router-dom";
 
 import { getMovies, loadMoreMovies, updateSearchTerm, clearMoviesList } from '../redux/actions';
 
-//https://cdn.pixabay.com/photo/2017/06/02/19/12/broken-link-2367103_1280.png
-
 const Movies = props => {
+  const history = useHistory();
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const onScroll = (event) => {
       if ((window.innerHeight + window.scrollY) >= event.target.body.offsetHeight - 10) {
-        console.log('search term in onscroll: ', searchTerm);
         props.loadMoreMovies();
       }
     };
@@ -35,6 +34,10 @@ const Movies = props => {
 
   const handleErrorLoadImage = (e) => e.target.src = 'https://cdn.tgdd.vn/hoi-dap/580732/cach-khac-phuc-loi-404-not-found-3-1-800x300.jpg';
 
+  const handleDetailClick = (id) => {
+    history.push(`/${id}`);
+  }
+
   return (
     <>
       <div className="mt-4 mb-4">
@@ -54,13 +57,13 @@ const Movies = props => {
       </div>
       <Row className="gx-4 gy-4">
         {props.appState.movies.map(movie => (
-          <Col sm={12} md={6} lg={4}>
-            <Card key={movie.imdbID}>
+          <Col sm={12} md={6} lg={4} style={{ cursor: "pointer"}}>
+            <Card onClick={() => handleDetailClick(movie.imdbID)} key={movie.imdbID}>
               <Card.Img variant="top" src={movie.Poster} onError={handleErrorLoadImage} />
               <Card.Title className="p-2">
                 {formatTitle(movie.Title)}
               </Card.Title>
-              <Button variant="primary">View detail</Button>
+              {/* <Button variant="primary" onClick={() => handleDetailClick(movie.imdbID)}>View detail</Button> */}
             </Card>
           </Col>
         ))}
