@@ -16,7 +16,7 @@ export const clearMoviesList = () => {
 }
 
 const debounceLoadMore = debounce((page, searchTerm, dispatch) => {
-  axios.get("http://www.omdbapi.com/", {
+  axios.get("https://www.omdbapi.com/", {
     params: {
       type: 'movie',
       s: searchTerm,
@@ -42,7 +42,7 @@ export const loadMoreMovies = () => {
 export const getMovies = () => {
   return (dispatch, getState) => {
     const { searchTerm } = getState();
-    axios.get("http://www.omdbapi.com/", {
+    axios.get("https://www.omdbapi.com/", {
       params: {
         type: 'movie',
         s: searchTerm,
@@ -57,7 +57,7 @@ export const getMovies = () => {
 
 export const getDetailMovie = id => {
   return dispatch => {
-    axios.get("http://www.omdbapi.com/", {
+    axios.get("https://www.omdbapi.com/", {
       params: {
         type: 'movie',
         apiKey,
