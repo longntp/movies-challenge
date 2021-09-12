@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "http://longntp.github.io/movies-challenge/static/css/main.42b99d59.chunk.css",
-    "main.js": "http://longntp.github.io/movies-challenge/static/js/main.cdbbf105.chunk.js",
-    "main.js.map": "http://longntp.github.io/movies-challenge/static/js/main.cdbbf105.chunk.js.map",
-    "runtime-main.js": "http://longntp.github.io/movies-challenge/static/js/runtime-main.685e141e.js",
-    "runtime-main.js.map": "http://longntp.github.io/movies-challenge/static/js/runtime-main.685e141e.js.map",
-    "static/css/2.818011ed.chunk.css": "http://longntp.github.io/movies-challenge/static/css/2.818011ed.chunk.css",
-    "static/js/2.65a5497e.chunk.js": "http://longntp.github.io/movies-challenge/static/js/2.65a5497e.chunk.js",
-    "static/js/2.65a5497e.chunk.js.map": "http://longntp.github.io/movies-challenge/static/js/2.65a5497e.chunk.js.map",
-    "static/js/3.b9a83769.chunk.js": "http://longntp.github.io/movies-challenge/static/js/3.b9a83769.chunk.js",
-    "static/js/3.b9a83769.chunk.js.map": "http://longntp.github.io/movies-challenge/static/js/3.b9a83769.chunk.js.map",
-    "index.html": "http://longntp.github.io/movies-challenge/index.html",
-    "static/css/2.818011ed.chunk.css.map": "http://longntp.github.io/movies-challenge/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.42b99d59.chunk.css.map": "http://longntp.github.io/movies-challenge/static/css/main.42b99d59.chunk.css.map",
-    "static/js/2.65a5497e.chunk.js.LICENSE.txt": "http://longntp.github.io/movies-challenge/static/js/2.65a5497e.chunk.js.LICENSE.txt"
+    "main.css": "https://longntp.github.io/movies-challenge/static/css/main.42b99d59.chunk.css",
+    "main.js": "https://longntp.github.io/movies-challenge/static/js/main.c1b448d5.chunk.js",
+    "main.js.map": "https://longntp.github.io/movies-challenge/static/js/main.c1b448d5.chunk.js.map",
+    "runtime-main.js": "https://longntp.github.io/movies-challenge/static/js/runtime-main.105ad1a3.js",
+    "runtime-main.js.map": "https://longntp.github.io/movies-challenge/static/js/runtime-main.105ad1a3.js.map",
+    "static/css/2.818011ed.chunk.css": "https://longntp.github.io/movies-challenge/static/css/2.818011ed.chunk.css",
+    "static/js/2.65a5497e.chunk.js": "https://longntp.github.io/movies-challenge/static/js/2.65a5497e.chunk.js",
+    "static/js/2.65a5497e.chunk.js.map": "https://longntp.github.io/movies-challenge/static/js/2.65a5497e.chunk.js.map",
+    "static/js/3.b9a83769.chunk.js": "https://longntp.github.io/movies-challenge/static/js/3.b9a83769.chunk.js",
+    "static/js/3.b9a83769.chunk.js.map": "https://longntp.github.io/movies-challenge/static/js/3.b9a83769.chunk.js.map",
+    "index.html": "https://longntp.github.io/movies-challenge/index.html",
+    "static/css/2.818011ed.chunk.css.map": "https://longntp.github.io/movies-challenge/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.42b99d59.chunk.css.map": "https://longntp.github.io/movies-challenge/static/css/main.42b99d59.chunk.css.map",
+    "static/js/2.65a5497e.chunk.js.LICENSE.txt": "https://longntp.github.io/movies-challenge/static/js/2.65a5497e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.685e141e.js",
+    "static/js/runtime-main.105ad1a3.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.65a5497e.chunk.js",
     "static/css/main.42b99d59.chunk.css",
-    "static/js/main.cdbbf105.chunk.js"
+    "static/js/main.c1b448d5.chunk.js"
   ]
 }
