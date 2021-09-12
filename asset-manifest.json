@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/movies-challenge/static/css/main.42b99d59.chunk.css",
+    "main.js": "/movies-challenge/static/js/main.869b6616.chunk.js",
+    "main.js.map": "/movies-challenge/static/js/main.869b6616.chunk.js.map",
+    "runtime-main.js": "/movies-challenge/static/js/runtime-main.5ee36aa0.js",
+    "runtime-main.js.map": "/movies-challenge/static/js/runtime-main.5ee36aa0.js.map",
+    "static/css/2.818011ed.chunk.css": "/movies-challenge/static/css/2.818011ed.chunk.css",
+    "static/js/2.65a5497e.chunk.js": "/movies-challenge/static/js/2.65a5497e.chunk.js",
+    "static/js/2.65a5497e.chunk.js.map": "/movies-challenge/static/js/2.65a5497e.chunk.js.map",
+    "static/js/3.b9a83769.chunk.js": "/movies-challenge/static/js/3.b9a83769.chunk.js",
+    "static/js/3.b9a83769.chunk.js.map": "/movies-challenge/static/js/3.b9a83769.chunk.js.map",
+    "index.html": "/movies-challenge/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/movies-challenge/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.42b99d59.chunk.css.map": "/movies-challenge/static/css/main.42b99d59.chunk.css.map",
+    "static/js/2.65a5497e.chunk.js.LICENSE.txt": "/movies-challenge/static/js/2.65a5497e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ee36aa0.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.65a5497e.chunk.js",
+    "static/css/main.42b99d59.chunk.css",
+    "static/js/main.869b6616.chunk.js"
+  ]
+}
