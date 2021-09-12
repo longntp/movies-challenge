@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -20,13 +20,13 @@ function App() {
   return (
     <Provider store={store}>
       <Container>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <>
             <Switch>
-              <Route path="/">
+              <Route path="/list">
                 <Movies />
               </Route>
-              <Route path="/:id">
+              <Route path="/detail/:id">
                 <Detail />
               </Route>
             </Switch>

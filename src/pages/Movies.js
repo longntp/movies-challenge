@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Button, Row, Col, Card } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { useHistory } from "react-router-dom";
+import { createHashHistory } from 'history';
 
 import { getMovies, loadMoreMovies, updateSearchTerm, clearMoviesList } from '../redux/actions';
 
 const Movies = props => {
-  const history = useHistory();
+  const history = createHashHistory();
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Movies = props => {
   const handleErrorLoadImage = (e) => e.target.src = 'https://cdn.tgdd.vn/hoi-dap/580732/cach-khac-phuc-loi-404-not-found-3-1-800x300.jpg';
 
   const handleDetailClick = (id) => {
-    history.push(`/${id}`);
+    history.push(`/detail/${id}`);
   }
 
   return (
@@ -63,7 +63,6 @@ const Movies = props => {
               <Card.Title className="p-2">
                 {formatTitle(movie.Title)}
               </Card.Title>
-              {/* <Button variant="primary" onClick={() => handleDetailClick(movie.imdbID)}>View detail</Button> */}
             </Card>
           </Col>
         ))}
