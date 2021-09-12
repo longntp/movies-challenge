@@ -9,6 +9,12 @@ export const updateSearchTerm = text => {
   }
 }
 
+export const clearMoviesList = () => {
+  return {
+    type: 'CLEAR_MOVIES_LIST'
+  }
+}
+
 const debounceLoadMore = debounce((page, searchTerm, dispatch) => {
   axios.get("http://www.omdbapi.com/", {
     params: {
@@ -17,9 +23,12 @@ const debounceLoadMore = debounce((page, searchTerm, dispatch) => {
       apiKey,
       page
     }
-  }).then(({ data }) => {
-    dispatch({ type: "GET_MOVIES", payload: data.Search });
-    dispatch({ type: "UPDATE_PAGE_INDEX", payload: page })
+  }).then((response) => {
+    const { data } = response;
+    if (!data.Error) {
+      dispatch({ type: "GET_MOVIES", payload: data.Search });
+      dispatch({ type: "UPDATE_PAGE_INDEX", payload: page })
+    }
   })
 }, 200);
 

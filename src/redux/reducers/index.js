@@ -22,10 +22,14 @@ export default (state = initialState, action) => {
         searchTerm: action.payload
       }
     case "UPDATE_PAGE_INDEX":
-      console.log('UPDATE_PAGE_INDEX')
       return {
         ...state,
         page: action.payload
+      }
+    case "CLEAR_MOVIES_LIST":
+      return {
+        ...state,
+        movies: []
       }
     default:
       return state
