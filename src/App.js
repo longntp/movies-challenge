@@ -20,7 +20,7 @@ function App() {
   return (
     <Provider store={store}>
       <Container>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <>
             <Switch>
               <Route path="/">
