@@ -23,11 +23,11 @@ function App() {
         <Router>
           <>
             <Switch>
-              <Route path="/:id">
-                <Detail />
-              </Route>
               <Route path="/">
                 <Movies />
+              </Route>
+              <Route path="/:id">
+                <Detail />
               </Route>
             </Switch>
           </>
