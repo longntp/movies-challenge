@@ -16,7 +16,7 @@ const Detail = (props) => {
 
   const handleBack = () => {
     props.clearDetailState();
-    history.push('/')
+    history.push('/list')
   }
 
   const { Title, Plot, Poster, Actors, Runtime, Writer, Released, Production, Rated, Metascore } = props.detail;
