@@ -65,7 +65,8 @@ export const getDetailMovie = id => {
       }
     }).then((response) => {
       const { data } = response;
-      dispatch({ type: "GET_DETAIL_MOVIE", payload: data })
+      dispatch({ type: "GET_DETAIL_MOVIE", payload: data });
+      dispatch({ type: "SHOW_DETAIL_MODAL" });
     })
   }
 }

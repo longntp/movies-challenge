@@ -2,7 +2,8 @@ const initialState = {
   movies: [],
   searchTerm: '',
   page: 1,
-  detail: {}
+  detail: {},
+  isModalShow: false,
 }
 
 export default (state = initialState, action) => {
@@ -41,6 +42,16 @@ export default (state = initialState, action) => {
       return {
         ...state,
         detail: {}
+      }
+    case "SHOW_DETAIL_MODAL":
+      return {
+        ...state,
+        isModalShow: true
+      }
+    case "CLOSE_DETAIL_MODAL":
+      return {
+        ...state,
+        isModalShow: false
       }
     default:
       return state

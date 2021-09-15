@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Button, Row, Col, Card } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { createHashHistory } from 'history';
 
-import { getMovies, loadMoreMovies, updateSearchTerm, clearMoviesList } from '../redux/actions';
+import { getMovies, loadMoreMovies, updateSearchTerm, clearMoviesList, getDetailMovie } from '../redux/actions';
+import DetailModal from './DetailModal';
 
 const Movies = props => {
-  const history = createHashHistory();
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -35,7 +34,7 @@ const Movies = props => {
   const handleErrorLoadImage = (e) => e.target.src = 'https://cdn.tgdd.vn/hoi-dap/580732/cach-khac-phuc-loi-404-not-found-3-1-800x300.jpg';
 
   const handleDetailClick = (id) => {
-    history.push(`/detail/${id}`);
+    props.getDetailMovie(id);
   }
 
   return (
@@ -67,6 +66,7 @@ const Movies = props => {
           </Col>
         ))}
       </Row>
+      <DetailModal />
     </>
   );
 }
@@ -80,7 +80,8 @@ const mapDispatchToProps = dispatch => {
     getMovies: () => dispatch(getMovies()),
     loadMoreMovies: () => dispatch(loadMoreMovies()),
     updateSearchTerm: (text) => dispatch(updateSearchTerm(text)),
-    clearMoviesList: () => dispatch(clearMoviesList())
+    clearMoviesList: () => dispatch(clearMoviesList()),
+    getDetailMovie: (id) => dispatch(getDetailMovie(id))
   }
 }
 

@@ -6,7 +6,6 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import './App.css';
@@ -17,6 +16,7 @@ import rootReducer from './redux/reducers';
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
 function App() {
+  
   return (
     <Provider store={store}>
       <Container>
